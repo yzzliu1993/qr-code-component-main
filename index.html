@@ -25,32 +25,44 @@
     }
 
     body div {
-      width: 100%;
+      width: 10%;
       background-color: hsl(0, 0%, 100%);
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: 5em auto;
       padding: 0.5em;
-      border-radius: 8px;
+      border-radius: 10px;
     }
 
     body img {
       width: 100%;
-      border-radius: 8px;
+      border-radius: 10px;
+    }
+    
+    body div div {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      gap: 1;
     }
 
-    body h1 {
-      width: 100%;
+    body div div h1 {
       font-weight: 700;
       text-align: center;
+      font-size: 0.85rem;
+      margin: 0.4em;
     }
 
-    body p {
-      width: 100%;
+    body div div p {
       font-weight: 400;
+      color: hsl(216, 15%, 48%);
       text-align: center;
-      color: hsl(216, 15%, 48%)
+      font-size: 0.65rem;
+      margin: 0.4em;
     }
 
 
@@ -59,11 +71,11 @@
       body div {
         width: 10%;
       }
-      body h1 {
-        font-size: 0.5rem;
+      body div div h1 {
+        font-size: 0.65rem;
       }
 
-      body p {
+      body div div p {
         font-size: 0.5rem;
       }
     }
@@ -71,14 +83,14 @@
     @media (max-width: 375px) {
 
       body div {
-        width: 30%;
+        width: 40%;
       }
 
-      body h1 {
-        font-size: 0.5rem;
+      body div div h1{
+        font-size: 0.65rem;
       }
 
-      body p {
+      body div div p{
         font-size: 0.5rem;
       }
     }
@@ -89,10 +101,10 @@
 <body>
   <div >
     <img src="./images/image-qr-code.png" />
-    <h1>Improve your front-end skills by building projects</h1>
-    <p>
-      Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-    </p>
-     </div>
+      <div>
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+  </div>
 </body>
 </html>
